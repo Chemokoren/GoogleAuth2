@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-6rgv&l#am%mog!s2%od4_*ov-n)eauuyz&ce)5=gq4xl@n+8^2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+# ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -81,6 +82,8 @@ WSGI_APPLICATION = 'DjangoGoogleLogin.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
+# new database updates as from today
 
 DATABASES = {
     'default': {
@@ -143,7 +146,7 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend'
 ]
 
-SITE_ID = 1
+SITE_ID = 2
 
 LOGIN_REDIRECT_URL = '/'
 
